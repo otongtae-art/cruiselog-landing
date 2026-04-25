@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ─── Primary Meta Tags ─────────────────────────────────────── -->
+  <title>크루즈로그 — 크루즈 여행, 처음이어도 괜찮아요 🚢</title>
+  <meta name="title" content="크루즈로그 — 크루즈 여행, 처음이어도 괜찮아요 🚢" />
+  <meta name="description" content="크루즈 입문자를 위한 친절한 가이드 — 비용 공개, 예약법 A to Z, 선사 비교, 꿀팁까지. 매일 새로운 크루즈 정보를 7개 채널에 공유합니다." />
+  <meta name="keywords" content="크루즈, 크루즈여행, 크루즈추천, 크루즈꿀팁, 지중해크루즈, MSC크루즈, 로얄캐리비안, 부산크루즈, 크루즈입문, 크루즈로그" />
+  <meta name="author" content="크루즈로그" />
+  <meta name="theme-color" content="#1A3557" />
+
+  <!-- ─── Open Graph / Facebook ─────────────────────────────────── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cruiselog.kr/" />
+  <meta property="og:title" content="크루즈로그 — 크루즈 여행, 처음이어도 괜찮아요 🚢" />
+  <meta property="og:description" content="크루즈 입문자를 위한 친절한 가이드 — 비용 공개, 예약법 A to Z, 선사 비교, 꿀팁까지." />
+  <meta property="og:image" content="https://cruiselog.kr/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="크루즈로그 — 크루즈 여행의 모든 기록" />
+  <meta property="og:site_name" content="크루즈로그" />
+  <meta property="og:locale" content="ko_KR" />
+
+  <!-- ─── Twitter / X ───────────────────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://cruiselog.kr/" />
+  <meta name="twitter:title" content="크루즈로그 — 크루즈 여행, 처음이어도 괜찮아요 🚢" />
+  <meta name="twitter:description" content="크루즈 입문자를 위한 친절한 가이드 — 비용 공개, 예약법, 선사 비교, 꿀팁." />
+  <meta name="twitter:image" content="https://cruiselog.kr/og-image.png" />
+  <meta name="twitter:creator" content="@cruiselog_kr" />
+
+  <!-- ─── 카카오톡 공유 ─────────────────────────────────────────── -->
+  <meta property="og:image:type" content="image/png" />
+
+  <!-- ─── Favicon (인라인 SVG, 외부 파일 불필요) ─────────────── -->
+  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%231A3557"/><text x="50%25" y="58%25" text-anchor="middle" font-size="38" fill="%23FF6B47" font-family="Apple SD Gothic Neo,sans-serif" font-weight="900">🚢</text></svg>' />
+
+  <!-- ─── Canonical ─────────────────────────────────────────────── -->
+  <link rel="canonical" href="https://cruiselog.kr/" />
+
+  <!-- ─── Structured Data (Google SEO) ──────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "크루즈로그",
+    "alternateName": "CruiseLog",
+    "url": "https://cruiselog.kr/",
+    "logo": "https://cruiselog.kr/og-image.png",
+    "description": "크루즈 입문자를 위한 정보 채널 — 비용 공개, 예약법, 선사 비교, 꿀팁",
+    "sameAs": [
+      "https://youtube.com/@cruiselog_kr",
+      "https://instagram.com/cruiselog_kr",
+      "https://www.threads.net/@cruiselog_kr",
+      "https://blog.naver.com/cruiselog",
+      "https://cafe.naver.com/cruiselog",
+      "https://cruiselog.tistory.com"
+    ]
+  }
+  </script>
+
+  <!-- ─── Fonts ──────────────────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Montserrat:wght@600;800&display=swap" rel="stylesheet" />
+
+  <!-- ─── Tailwind CDN (배포 후 production CSS로 교체 권장) ──── -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:    '#1A3557',
+            coral:   '#FF6B47',
+            mist:    '#E8F4F8',
+            sand:    '#FFF7ED',
+            charcoal:'#2D2D2D',
+          },
+          fontFamily: {
+            sans: ['"Noto Sans KR"', 'system-ui', 'sans-serif'],
+            display: ['Montserrat', '"Noto Sans KR"', 'sans-serif'],
+          },
+          boxShadow: {
+            'brand': '0 20px 50px -20px rgba(26, 53, 87, 0.4)',
+            'coral': '0 10px 30px -10px rgba(255, 107, 71, 0.5)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans KR', sans-serif; -webkit-font-smoothing: antialiased; }
+
+    /* Hero gradient overlay */
+    .hero-gradient {
+      background:
+        linear-gradient(135deg, rgba(26,53,87,0.92) 0%, rgba(26,53,87,0.65) 60%, rgba(255,107,71,0.4) 100%),
+        url('https://images.pexels.com/photos/813011/pexels-photo-813011.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280') center/cover;
+    }
+
+    /* Wave divider */
+    .wave-bottom {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      line-height: 0;
+    }
+
+    /* Card hover */
+    .channel-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+    .channel-card:hover {
+      transform: translateY(-6px);
+      border-color: #FF6B47;
+      box-shadow: 0 20px 40px -15px rgba(26, 53, 87, 0.3);
+    }
+
+    /* Animated badge */
+    @keyframes pulse-coral {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(255, 107, 71, 0.6); }
+      50%      { box-shadow: 0 0 0 12px rgba(255, 107, 71, 0); }
+    }
+    .live-dot {
+      animation: pulse-coral 2s ease-in-out infinite;
+    }
+
+    /* CTA shine */
+    .btn-shine {
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-shine::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transition: left 0.6s ease;
+    }
+    .btn-shine:hover::after { left: 100%; }
+  </style>
+</head>
+
+<body class="bg-mist text-charcoal antialiased">
+
+  <!-- ━━━━━━━━━━━━━ 헤더 ━━━━━━━━━━━━━ -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-mist">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-navy rounded-xl flex items-center justify-center text-coral text-2xl">
+          🚢
+        </div>
+        <div>
+          <div class="font-display font-extrabold text-navy text-lg leading-tight">CruiseLog</div>
+          <div class="text-xs text-charcoal/60 leading-tight">크루즈로그</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-charcoal/80">
+        <a href="#about" class="hover:text-coral transition">서비스</a>
+        <a href="#why" class="hover:text-coral transition">차별점</a>
+        <a href="#channels" class="hover:text-coral transition">채널</a>
+        <a href="https://cafe.naver.com/cruiselog" target="_blank" rel="noopener"
+           class="px-5 py-2 bg-coral text-white rounded-full font-semibold hover:bg-coral/90 transition shadow-coral">
+          카페 가입 →
+        </a>
+      </nav>
+      <a href="https://cafe.naver.com/cruiselog" target="_blank" rel="noopener"
+         class="md:hidden px-4 py-2 bg-coral text-white rounded-full text-sm font-semibold">
+        카페
+      </a>
+    </div>
+  </header>
+
+  <!-- ━━━━━━━━━━━━━ HERO ━━━━━━━━━━━━━ -->
+  <section id="hero" class="relative hero-gradient text-white">
+    <div class="max-w-6xl mx-auto px-6 py-28 md:py-40 relative z-10">
+      <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-8 text-sm">
+        <span class="w-2 h-2 bg-coral rounded-full live-dot"></span>
+        <span>매일 새 크루즈 정보 자동 업로드 중</span>
+      </div>
+
+      <h1 class="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl leading-tight mb-6">
+        크루즈,<br>
+        <span class="text-coral">처음이어도</span> 괜찮아요 🚢
+      </h1>
+
+      <p class="text-lg md:text-xl text-white/90 max-w-2xl mb-10 leading-relaxed">
+        크루즈 입문자를 위한 친절한 가이드.<br>
+        실제 비용 공개, 예약법 A to Z, 선사 비교, 꿀팁까지<br>
+        — 7개 채널에 매일 새 콘텐츠가 올라옵니다.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="https://cafe.naver.com/cruiselog" target="_blank" rel="noopener"
+           class="btn-shine inline-flex items-center justify-center gap-2 px-8 py-4 bg-coral text-white font-bold rounded-full shadow-coral hover:bg-coral/90 transition text-lg">
+          카페 가입하고 독점 정보 받기
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+        <a href="#channels"
+           class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition text-lg">
+          채널 둘러보기
+        </a>
+      </div>
+
+      <!-- KPI / Trust signals -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl">
+        <div>
+          <div class="text-3xl md:text-4xl font-display font-extrabold text-coral">7</div>
+          <div class="text-sm text-white/70 mt-1">운영 채널</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-display font-extrabold text-coral">매일</div>
+          <div class="text-sm text-white/70 mt-1">새 콘텐츠</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-display font-extrabold text-coral">100%</div>
+          <div class="text-sm text-white/70 mt-1">실제 정보</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-display font-extrabold text-coral">무료</div>
+          <div class="text-sm text-white/70 mt-1">독점 가이드</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave divider -->
+    <svg class="wave-bottom" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#E8F4F8" d="M0,32 C320,80 720,0 1440,40 L1440,80 L0,80 Z"></path>
+    </svg>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━ ABOUT (3 Cards) ━━━━━━━━━━━━━ -->
+  <section id="about" class="py-24 md:py-32 bg-mist">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="inline-block text-coral font-semibold text-sm tracking-wider uppercase mb-3">What We Do</span>
+        <h2 class="font-display font-extrabold text-3xl md:text-5xl text-navy mb-4">
+          어떤 서비스인가요?
+        </h2>
+        <p class="text-charcoal/70 text-lg max-w-2xl mx-auto leading-relaxed">
+          크루즈로그는 <strong class="text-navy">크루즈 입문자가 막막함 없이 첫 크루즈를 떠날 수 있게</strong> 도와주는 정보 채널이에요.
+          전문가의 강의가 아니라, 옆집 친구가 알려주는 현실적인 가이드를 지향합니다.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-3xl p-8 border-2 border-mist channel-card">
+          <div class="w-14 h-14 bg-coral/10 rounded-2xl flex items-center justify-center mb-6 text-3xl">
+            💰
+          </div>
+          <h3 class="font-display font-extrabold text-xl text-navy mb-3">실제 비용 공개</h3>
+          <p class="text-charcoal/70 leading-relaxed text-sm">
+            "크루즈 비싸지 않나요?" 그래서 저희가 직접 영수증을 공개합니다.
+            2인 7박, 1인 5박, MSC vs 로얄캐리비안까지 — 두루뭉술하지 않고 구체적인 숫자로.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-3xl p-8 border-2 border-mist channel-card">
+          <div class="w-14 h-14 bg-coral/10 rounded-2xl flex items-center justify-center mb-6 text-3xl">
+            📋
+          </div>
+          <h3 class="font-display font-extrabold text-xl text-navy mb-3">예약법 A to Z</h3>
+          <p class="text-charcoal/70 leading-relaxed text-sm">
+            여행사 패키지보다 30% 저렴하게 직접 예약하는 방법.
+            선실 종류, 결제 시점, 환불 정책, 업그레이드 꿀팁까지 단계별로 안내해드려요.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-3xl p-8 border-2 border-mist channel-card">
+          <div class="w-14 h-14 bg-coral/10 rounded-2xl flex items-center justify-center mb-6 text-3xl">
+            💬
+          </div>
+          <h3 class="font-display font-extrabold text-xl text-navy mb-3">Q&A 커뮤니티</h3>
+          <p class="text-charcoal/70 leading-relaxed text-sm">
+            네이버 카페에서 회원들이 직접 묻고 답합니다.
+            크루즈 5번 이상 다녀온 마니아부터 첫 여행 입문자까지, 진짜 경험이 모이는 공간.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━ WHY ━━━━━━━━━━━━━ -->
+  <section id="why" class="py-24 md:py-32 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="inline-block text-coral font-semibold text-sm tracking-wider uppercase mb-3">Why CruiseLog</span>
+          <h2 class="font-display font-extrabold text-3xl md:text-5xl text-navy mb-6 leading-tight">
+            전문가의 강의가 아닌,<br>
+            <span class="text-coral">친구의 조언</span>이에요
+          </h2>
+          <p class="text-charcoal/70 text-lg leading-relaxed mb-8">
+            기존 크루즈 정보는 너무 어렵거나, 광고처럼 느껴졌어요.
+            그래서 우리는 <strong class="text-navy">실제 여행자의 시점</strong>으로 풀어내기로 했습니다.
+            가격 보장도, 거짓 후기도 없어요.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <span class="flex-shrink-0 w-6 h-6 bg-coral/10 rounded-full flex items-center justify-center mt-0.5">
+                <svg class="w-3.5 h-3.5 text-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <div>
+                <strong class="text-navy">투명한 비용</strong>
+                <span class="text-charcoal/70"> — 영수증 그대로 공개</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="flex-shrink-0 w-6 h-6 bg-coral/10 rounded-full flex items-center justify-center mt-0.5">
+                <svg class="w-3.5 h-3.5 text-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <div>
+                <strong class="text-navy">실시간 업데이트</strong>
+                <span class="text-charcoal/70"> — 크루즈 일정과 딜이 바뀌면 즉시 반영</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="flex-shrink-0 w-6 h-6 bg-coral/10 rounded-full flex items-center justify-center mt-0.5">
+                <svg class="w-3.5 h-3.5 text-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <div>
+                <strong class="text-navy">국내 모항 특화</strong>
+                <span class="text-charcoal/70"> — 부산·인천 출발 일정 집중 큐레이션</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="flex-shrink-0 w-6 h-6 bg-coral/10 rounded-full flex items-center justify-center mt-0.5">
+                <svg class="w-3.5 h-3.5 text-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <div>
+                <strong class="text-navy">광고 없는 정보</strong>
+                <span class="text-charcoal/70"> — 협찬은 명시하고, 솔직한 후기만</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Stat card -->
+        <div class="relative">
+          <div class="bg-gradient-to-br from-navy to-navy/80 rounded-3xl p-10 text-white shadow-brand relative overflow-hidden">
+            <div class="absolute -top-20 -right-20 w-60 h-60 bg-coral/20 rounded-full blur-3xl"></div>
+            <div class="relative z-10">
+              <div class="text-6xl mb-6">🌊</div>
+              <div class="font-display font-extrabold text-4xl mb-3">
+                "크루즈, 어렵지 않아요"
+              </div>
+              <p class="text-white/80 leading-relaxed mb-8">
+                저희도 처음엔 막막했어요.
+                근데 직접 다녀와보니 알겠더라고요 — 정보만 제대로 정리되어 있으면, 진짜 누구나 갈 수 있는 여행이라는 걸.
+              </p>
+              <div class="pt-6 border-t border-white/20 flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-coral flex items-center justify-center font-display font-extrabold text-white">
+                  CL
+                </div>
+                <div>
+                  <div class="font-bold">크루즈로그 운영팀</div>
+                  <div class="text-sm text-white/60">@cruiselog_kr</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━ CHANNELS (7개) ━━━━━━━━━━━━━ -->
+  <section id="channels" class="py-24 md:py-32 bg-mist relative">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="inline-block text-coral font-semibold text-sm tracking-wider uppercase mb-3">7 Channels</span>
+        <h2 class="font-display font-extrabold text-3xl md:text-5xl text-navy mb-4">
+          어디서든 만날 수 있어요
+        </h2>
+        <p class="text-charcoal/70 text-lg max-w-2xl mx-auto">
+          7개 채널 중 편한 곳에서 시작하세요.<br>
+          모든 채널이 매일 새 콘텐츠로 업데이트됩니다.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 네이버 카페 (허브) -->
+        <a href="https://cafe.naver.com/cruiselog" target="_blank" rel="noopener"
+           class="channel-card bg-white rounded-2xl p-7 border-2 border-coral relative overflow-hidden md:col-span-2 lg:col-span-1">
+          <span class="absolute top-4 right-4 px-2 py-0.5 bg-coral text-white text-xs font-bold rounded-full">HUB</span>
+          <div class="w-12 h-12 bg-[#03C75A] rounded-xl flex items-center justify-center mb-4 text-white font-extrabold text-xl">N</div>
+          <h3 class="font-bold text-navy text-lg">네이버 카페</h3>
+          <p class="text-sm text-charcoal/60 mb-4">크루즈로그 공식 커뮤니티 — Q&A + 독점 후기</p>
+          <span class="text-coral font-bold text-sm">가입하기 →</span>
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://youtube.com/@cruiselog_kr" target="_blank" rel="noopener"
+           class="channel-card bg-white rounded-2xl p-7 border-2 border-mist">
+          <div class="w-12 h-12 bg-[#FF0000] rounded-xl flex items-center justify-center mb-4 text-white">
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </div>
+          <h3 class="font-bold text-navy text-lg">YouTube Shorts</h3>
+          <p class="text-sm text-charcoal/60 mb-4">크루즈 꿀팁 30초 영상</p>
+          <span class="text-coral font-bold text-sm">구독하기 →</span>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/cruiselog_kr" target="_blank" rel="noopener"
+           class="channel-card bg-white rounded-2xl p-7 border-2 border-mist">
+          <div class="w-12 h-12 bg-gradient-to-br from-[#FEDA77] via-[#F58529] to-[#DD2A7B] rounded-xl flex items-center justify-center mb-4 text-white">
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </div>
+          <h3 class="font-bold text-navy text-lg">Instagram</h3>
+          <p class="text-sm text-charcoal/60 mb-4">감성 크루즈 사진 + 릴스</p>
+          <span class="text-coral font-bold text-sm">팔로우하기 →</span>
+        </a>
+
+        <!-- 네이버 블로그 -->
+        <a href="https://blog.naver.com/cruiselog" target="_blank" rel="noopener"
+           class="channel-card bg-white rounded-2xl p-7 border-2 border-mist">
+          <div class="w-12 h-12 bg-[#03C75A]/15 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-[#03C75A] font-extrabold text-2xl">B</span>
+          </div>
+          <h3 class="font-bold text-navy text-lg">네이버 블로그</h3>
+          <p class="text-sm text-charcoal/60 mb-4">상세 가이드 + 비용 비교</p>
+          <span class="text-coral font-bold text-sm">읽으러 가기 →</span>
+        </a>
+
+        <!-- Threads -->
+        <a href="https://www.threads.net/@cruiselog_kr" target="_blank" rel="noopener"
+           class="channel-card bg-white rounded-2xl p-7 border-2 border-mist">
+          <div class="w-12 h-12 bg-charcoal rounded-xl flex items-center justify-center mb-4 text-white">
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.466 10.881c-.078-.038-.157-.075-.237-.11-.139-2.572-1.544-4.044-3.901-4.06h-.032c-1.41 0-2.583.602-3.305 1.696l1.296.89c.539-.818 1.388-.992 2.01-.992h.022c.775.005 1.36.23 1.738.668.276.319.46.76.554 1.318a8.97 8.97 0 0 0-2.252-.108c-2.265.13-3.722 1.452-3.624 3.288.05.93.514 1.73 1.305 2.252.67.441 1.532.657 2.428.609 1.183-.065 2.11-.516 2.756-1.341.49-.626.8-1.437.927-2.46.519.314.904.726 1.117 1.221.36.84.381 2.219-.745 3.344-.987.985-2.175 1.412-3.972 1.425-1.994-.015-3.503-.654-4.486-1.9-.92-1.166-1.394-2.851-1.413-5.005.019-2.154.494-3.838 1.413-5.005.983-1.246 2.492-1.885 4.486-1.9 2.008.015 3.543.656 4.564 1.906.5.612.878 1.382 1.131 2.279l1.555-.414c-.305-1.103-.787-2.054-1.444-2.846C18.353 1.21 16.473.354 14.018.337H14C11.55.354 9.7 1.215 8.5 2.7c-1.067 1.32-1.62 3.193-1.642 5.572v.014c.022 2.379.575 4.252 1.642 5.572 1.2 1.485 3.05 2.346 5.5 2.363h.018c2.182-.015 3.715-.585 4.978-1.85 1.652-1.652 1.602-3.717 1.058-4.985-.39-.91-1.135-1.65-2.156-2.143zm-3.351 3.626c-.96.054-1.96-.398-1.997-.998-.027-.5.337-1.054 2.045-1.144.32-.018.628-.026.92-.026.74 0 1.43.072 2.05.21-.232 1.886-1.122 1.913-3.018 1.958z"/></svg>
+          </div>
+          <h3 class="font-bold text-navy text-lg">Threads</h3>
+          <p class="text-sm text-charcoal/60 mb-4">짧고 강한 크루즈 인사이트</p>
+          <span class="text-coral font-bold text-sm">팔로우하기 →</span>
+        </a>
+
+        <!-- 티스토리 -->
+        <a href="https://cruiselog.tistory.com" target="_blank" rel="noopener"
+           class="channel-card bg-white rounded-2xl p-7 border-2 border-mist">
+          <div class="w-12 h-12 bg-[#FF5A1F]/15 rounded-xl flex items-center justify-center mb-4">
+            <span class="text-[#FF5A1F] font-extrabold text-2xl">T</span>
+          </div>
+          <h3 class="font-bold text-navy text-lg">Tistory</h3>
+          <p class="text-sm text-charcoal/60 mb-4">구글 SEO 장문 가이드</p>
+          <span class="text-coral font-bold text-sm">읽으러 가기 →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━ FINAL CTA ━━━━━━━━━━━━━ -->
+  <section class="py-24 md:py-32 bg-navy text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute -top-32 -left-32 w-96 h-96 bg-coral rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-coral rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <div class="text-5xl mb-6">🚢</div>
+      <h2 class="font-display font-extrabold text-3xl md:text-5xl mb-6 leading-tight">
+        다음 크루즈, 우리랑 같이 떠나요
+      </h2>
+      <p class="text-white/80 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+        카페에 가입하면 7개 채널 어디에도 없는 <strong class="text-coral">독점 가이드</strong>와
+        <strong class="text-coral">실시간 딜 알림</strong>을 받을 수 있어요. 무료입니다.
+      </p>
+      <a href="https://cafe.naver.com/cruiselog" target="_blank" rel="noopener"
+         class="btn-shine inline-flex items-center justify-center gap-2 px-10 py-5 bg-coral text-white font-bold rounded-full shadow-coral hover:bg-coral/90 transition text-lg">
+        지금 카페 가입하기
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
+      <p class="mt-6 text-sm text-white/50">3초 안에 가입 가능 · 스팸 없음 · 언제든 탈퇴 가능</p>
+    </div>
+  </section>
+
+  <!-- ━━━━━━━━━━━━━ FOOTER ━━━━━━━━━━━━━ -->
+  <footer class="bg-charcoal text-white/70 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-8 h-8 bg-navy rounded-lg flex items-center justify-center text-coral text-lg">🚢</div>
+            <span class="font-display font-extrabold text-white text-lg">CruiseLog</span>
+          </div>
+          <p class="text-sm leading-relaxed">
+            크루즈 입문자를 위한 친절한 가이드 채널.<br>
+            크루즈, 처음이어도 괜찮아요.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3 text-sm uppercase tracking-wider">빠른 링크</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#about" class="hover:text-coral transition">서비스 소개</a></li>
+            <li><a href="#why" class="hover:text-coral transition">차별점</a></li>
+            <li><a href="#channels" class="hover:text-coral transition">전체 채널</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3 text-sm uppercase tracking-wider">문의</h4>
+          <ul class="space-y-2 text-sm">
+            <li>이메일: <a href="mailto:cruiselog.kr@gmail.com" class="hover:text-coral transition">cruiselog.kr@gmail.com</a></li>
+            <li>제휴/협찬 환영</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+        <div>© 2026 크루즈로그 (CruiseLog). All rights reserved.</div>
+        <div class="text-white/40">Made with 💙 for cruise lovers</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
