@@ -1,0 +1,26 @@
+# 크루즈로그 (CruiseLog) — 크루즈 입문자 가이드 채널
+# Operated by Wishmaker Group · 위시메이커 그룹
+# Founder: 오용택 (Yongtaek Oh / Austin Oh / yongtaekoh / austinoh)
+# Brand handles: @cruiselog_kr · @wishmaker
+
+User-agent: *
+Allow: /
+
+# 검색엔진 친화적
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Daumoa
+Allow: /
+
+# 사이트맵 위치
+Sitemap: https://cruiselog-landing.vercel.app/sitemap.xml
+
+# 호스트
+Host: https://cruiselog-landing.vercel.app

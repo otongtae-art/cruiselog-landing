@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ─── Primary Meta Tags ─────────────────────────────────────── -->
-  <title>크루즈로그 — 크루즈 여행, 처음이어도 괜찮아요 🚢</title>
-  <meta name="title" content="크루즈로그 — 크루즈 여행, 처음이어도 괜찮아요 🚢" />
-  <meta name="description" content="크루즈 입문자를 위한 친절한 가이드 — 비용 공개, 예약법 A to Z, 선사 비교, 꿀팁까지. 매일 새로운 크루즈 정보를 7개 채널에 공유합니다." />
-  <meta name="keywords" content="크루즈, 크루즈여행, 크루즈추천, 크루즈꿀팁, 지중해크루즈, MSC크루즈, 로얄캐리비안, 부산크루즈, 크루즈입문, 크루즈로그" />
-  <meta name="author" content="크루즈로그" />
+  <title>크루즈로그 (CruiseLog) — 크루즈 여행, 처음이어도 괜찮아요 🚢 | Wishmaker Group</title>
+  <meta name="title" content="크루즈로그 (CruiseLog) — 크루즈 여행, 처음이어도 괜찮아요 🚢" />
+  <meta name="description" content="크루즈 입문자를 위한 친절한 가이드 — 비용 공개, 예약법 A to Z, 선사 비교, 꿀팁까지. 매일 새로운 크루즈 정보를 7개 채널에 공유합니다. 운영: 위시메이커 그룹 (Wishmaker Group) · 오용택 (Yongtaek Oh / Austin Oh)." />
+  <meta name="keywords" content="크루즈, 크루즈여행, 크루즈추천, 크루즈꿀팁, 지중해크루즈, MSC크루즈, 로얄캐리비안, 부산크루즈, 크루즈입문, 크루즈로그, CruiseLog, 위시메이커, 위시메이커그룹, Wishmaker, Wishmaker Group, wishmakergroup, 오용택, Yongtaek Oh, Austin Oh, yongtaekoh, austinoh" />
+  <meta name="author" content="오용택 (Yongtaek Oh / Austin Oh) · Wishmaker Group" />
+  <meta name="publisher" content="Wishmaker Group · 위시메이커 그룹" />
   <meta name="theme-color" content="#1A3557" />
 
   <!-- ─── Open Graph / Facebook ─────────────────────────────────── -->
@@ -35,31 +36,106 @@
   <!-- ─── 카카오톡 공유 ─────────────────────────────────────────── -->
   <meta property="og:image:type" content="image/png" />
 
-  <!-- ─── Favicon (인라인 SVG, 외부 파일 불필요) ─────────────── -->
-  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%231A3557"/><text x="50%25" y="58%25" text-anchor="middle" font-size="38" fill="%23FF6B47" font-family="Apple SD Gothic Neo,sans-serif" font-weight="900">🚢</text></svg>' />
+  <!-- ─── Favicon ──────────────────────────────────────────────── -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/og-image.png" />
+  <link rel="mask-icon" href="/favicon.svg" color="#1A3557" />
+
+  <!-- ─── Sitemap / Robots ─────────────────────────────────────── -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
   <!-- ─── Canonical ─────────────────────────────────────────────── -->
   <link rel="canonical" href="https://cruiselog-landing.vercel.app/" />
 
-  <!-- ─── Structured Data (Google SEO) ──────────────────────────── -->
+  <!-- ─── Structured Data (Google / Naver / Bing SEO) ──────────── -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "크루즈로그",
-    "alternateName": "CruiseLog",
-    "url": "https://cruiselog-landing.vercel.app/",
-    "logo": "https://cruiselog-landing.vercel.app/og-image.png",
-    "description": "크루즈 입문자를 위한 정보 채널 — 비용 공개, 예약법, 선사 비교, 꿀팁",
-    "sameAs": [
-      "https://youtube.com/@cruiselog_kr",
-      "https://instagram.com/cruiselog_kr",
-      "https://www.threads.net/@cruiselog_kr",
-      "https://blog.naver.com/cruiselog",
-      "https://cafe.naver.com/cruiselog",
-      "https://cruiselog.tistory.com"
-    ]
-  }
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://cruiselog-landing.vercel.app/#cruiselog",
+      "name": "크루즈로그",
+      "alternateName": ["CruiseLog", "크루즈로그", "@cruiselog_kr"],
+      "url": "https://cruiselog-landing.vercel.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cruiselog-landing.vercel.app/logo.svg",
+        "width": 320,
+        "height": 80
+      },
+      "image": "https://cruiselog-landing.vercel.app/og-image.png",
+      "description": "크루즈 입문자를 위한 정보 채널 — 비용 공개, 예약법 A to Z, 선사 비교, 꿀팁. 운영: 위시메이커 그룹 (Wishmaker Group) · 오용택 (Yongtaek Oh / Austin Oh).",
+      "foundingDate": "2026",
+      "founder": {
+        "@id": "https://cruiselog-landing.vercel.app/#yongtaek-oh"
+      },
+      "parentOrganization": {
+        "@id": "https://cruiselog-landing.vercel.app/#wishmaker-group"
+      },
+      "knowsAbout": ["크루즈", "크루즈여행", "MSC 크루즈", "로얄캐리비안", "지중해 크루즈", "부산 출발 크루즈"],
+      "sameAs": [
+        "https://youtube.com/@cruiselog_kr",
+        "https://instagram.com/cruiselog_kr",
+        "https://www.threads.net/@cruiselog_kr",
+        "https://blog.naver.com/cruiselog",
+        "https://cafe.naver.com/cruiselog",
+        "https://cruiselog.tistory.com"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "cruiselog.kr@gmail.com",
+        "contactType": "Customer Service",
+        "availableLanguage": ["Korean", "English"]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://cruiselog-landing.vercel.app/#wishmaker-group",
+      "name": "위시메이커 그룹",
+      "alternateName": ["Wishmaker Group", "Wishmaker", "위시메이커", "wishmakergroup", "wishmaker"],
+      "url": "https://cruiselog-landing.vercel.app/",
+      "description": "콘텐츠 자동화 기반 미디어 그룹. 크루즈로그(CruiseLog)를 운영합니다.",
+      "founder": {
+        "@id": "https://cruiselog-landing.vercel.app/#yongtaek-oh"
+      },
+      "subOrganization": {
+        "@id": "https://cruiselog-landing.vercel.app/#cruiselog"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://cruiselog-landing.vercel.app/#yongtaek-oh",
+      "name": "오용택",
+      "givenName": "용택",
+      "familyName": "오",
+      "alternateName": ["Yongtaek Oh", "Austin Oh", "yongtaekoh", "austinoh", "위시메이커", "Wishmaker"],
+      "jobTitle": "Founder",
+      "worksFor": [
+        { "@id": "https://cruiselog-landing.vercel.app/#wishmaker-group" },
+        { "@id": "https://cruiselog-landing.vercel.app/#cruiselog" }
+      ],
+      "knowsAbout": ["크루즈 여행", "콘텐츠 자동화", "AI 콘텐츠 생성", "디지털 마케팅"],
+      "sameAs": [
+        "https://github.com/otongtae-art",
+        "https://instagram.com/cruiselog_kr"
+      ],
+      "knowsLanguage": ["ko", "en"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://cruiselog-landing.vercel.app/#website",
+      "url": "https://cruiselog-landing.vercel.app/",
+      "name": "크루즈로그 (CruiseLog)",
+      "description": "크루즈 입문자를 위한 친절한 가이드 — by Wishmaker Group · 오용택",
+      "publisher": {
+        "@id": "https://cruiselog-landing.vercel.app/#wishmaker-group"
+      },
+      "inLanguage": "ko-KR"
+    }
+  ]
   </script>
 
   <!-- ─── Fonts ──────────────────────────────────────────────────── -->
@@ -514,9 +590,33 @@
           </ul>
         </div>
       </div>
-      <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-        <div>© 2026 크루즈로그 (CruiseLog). All rights reserved.</div>
-        <div class="text-white/40">Made with 💙 for cruise lovers</div>
+      <!-- Operator info (위시메이커 / 오용택) -->
+      <div class="pt-8 pb-6 border-t border-white/10">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-coral to-coral/70 flex items-center justify-center font-display font-extrabold text-white text-xs">
+              WG
+            </div>
+            <div>
+              <div class="text-white font-semibold">
+                Operated by <a href="#" class="text-coral hover:underline">Wishmaker Group</a>
+                <span class="text-white/40 mx-1">·</span>
+                <span>위시메이커 그룹</span>
+              </div>
+              <div class="text-white/50 text-xs mt-0.5">
+                Founder: 오용택 (Yongtaek Oh / Austin Oh) · @wishmaker · @cruiselog_kr
+              </div>
+            </div>
+          </div>
+          <div class="text-white/40 text-xs">
+            wishmakergroup · wishmaker · yongtaekoh · austinoh
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+        <div>© 2026 크루즈로그 (CruiseLog) · A Wishmaker Group brand. All rights reserved.</div>
+        <div class="text-white/40">Made with 💙 by 오용택 (Austin Oh) for cruise lovers</div>
       </div>
     </div>
   </footer>

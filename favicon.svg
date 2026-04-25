@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="크루즈로그">
+  <defs>
+    <linearGradient id="fav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A3557"/>
+      <stop offset="100%" stop-color="#274B7B"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#fav)"/>
+
+  <!-- Cruise ship icon -->
+  <g transform="translate(32 36)">
+    <path d="M -20 6 L 20 6 L 16 14 L -16 14 Z" fill="#FFFFFF"/>
+    <rect x="-16" y="-2" width="32" height="8" fill="#FFFFFF" opacity="0.95"/>
+    <rect x="-10" y="-9" width="20" height="7" fill="#FFFFFF" opacity="0.85"/>
+    <rect x="-4" y="-15" width="8" height="6" fill="#FFFFFF" opacity="0.75"/>
+    <rect x="5" y="-13" width="4" height="9" fill="#FF6B47"/>
+  </g>
+
+  <!-- Wave -->
+  <path d="M 8 52 Q 20 48 32 52 T 56 52" stroke="#FF6B47" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
