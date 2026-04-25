@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — 페이지를 찾을 수 없어요 | 크루즈로그</title>
+  <meta name="description" content="찾으시는 페이지가 없습니다. 크루즈로그 홈으로 돌아가세요." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;800;900&family=Montserrat:wght@800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:'#1A3557',coral:'#FF6B47',mist:'#E8F4F8'}}}};</script>
+  <style>
+    body { font-family: 'Noto Sans KR', sans-serif; }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+    .float { animation: float 3s ease-in-out infinite; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-mist via-white to-coral/10 min-h-screen flex flex-col">
+  <main class="flex-1 flex items-center justify-center px-6 py-20">
+    <div class="text-center max-w-xl">
+      <div class="text-9xl mb-6 float">🚢</div>
+      <div class="font-display text-7xl md:text-9xl font-extrabold text-navy mb-2">404</div>
+      <h1 class="text-2xl md:text-3xl font-bold text-navy mb-4">크루즈가 항로를 잃었어요</h1>
+      <p class="text-charcoal text-base md:text-lg mb-8 leading-relaxed text-gray-600">
+        찾으시는 페이지가 없거나 이동되었어요.<br>
+        다음 항구는 어디로 정하실래요?
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/" class="px-8 py-4 bg-coral text-white font-bold rounded-full shadow-lg hover:bg-coral/90 transition">
+          🏠 크루즈로그 홈
+        </a>
+        <a href="https://cafe.naver.com/cruiselog" class="px-8 py-4 bg-white text-navy font-bold rounded-full shadow border border-mist hover:bg-mist transition">
+          💬 카페 가입
+        </a>
+      </div>
+      <p class="text-xs text-gray-400 mt-12">
+        © 크루즈로그 · Wishmaker Group · 오용택 (Austin Oh)
+      </p>
+    </div>
+  </main>
+</body>
+</html>

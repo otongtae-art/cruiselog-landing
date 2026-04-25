@@ -1,0 +1,40 @@
+/* 크루즈로그 (CruiseLog) — humans.txt */
+/* 사람이 직접 운영하는 사이트입니다 (with AI 자동화) */
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  TEAM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Founder, Operator, Designer, Engineer
+  오용택 (Yongtaek Oh)
+  English: Austin Oh
+  Handles: @yongtaekoh · @austinoh · @wishmaker
+  Email: cruiselog.kr@gmail.com
+
+Organization
+  Wishmaker Group · 위시메이커 그룹
+  Brand: 크루즈로그 (CruiseLog)
+  Handle: @cruiselog_kr
+  Domain: cruiselog-landing.vercel.app
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  THANKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Vercel — 호스팅
+  Pexels — 무료 이미지
+  Tailwind CSS — 스타일링
+  Google Fonts — 한글 폰트
+  Pillow (Python) — OG 이미지 생성
+  Anthropic Claude — 코드 페어 프로그래머
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SITE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Last update: 2026-04-25
+  Standards: HTML5, CSS3, ES2022, Schema.org, OpenGraph
+  Components: Static HTML, Tailwind CDN, JSON-LD
+  Language: 한국어 (ko-KR)
+  Doctype: HTML5
+  IDE: Claude Code · Visual Studio Code

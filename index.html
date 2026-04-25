@@ -13,6 +13,43 @@
   <meta name="publisher" content="Wishmaker Group · 위시메이커 그룹" />
   <meta name="theme-color" content="#1A3557" />
 
+  <!-- ─── Search Engine Bot Directives ─────────────────────────── -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="naver-bot" content="index, follow" />
+  <meta name="Yeti" content="index, follow" />
+  <meta name="Daumoa" content="index, follow" />
+  <meta name="bingbot" content="index, follow" />
+  <meta name="rating" content="general" />
+  <meta name="distribution" content="global" />
+  <meta name="revisit-after" content="1 days" />
+
+  <!-- ─── Site Verification (사용자 등록 후 코드 받아서 채울 자리) ─ -->
+  <!-- Google Search Console 등록 후 받은 코드를 content에 입력 -->
+  <meta name="google-site-verification" content="REPLACE_WITH_GSC_CODE" />
+  <!-- Naver Search Advisor 등록 후 받은 코드를 content에 입력 -->
+  <meta name="naver-site-verification" content="REPLACE_WITH_NAVER_CODE" />
+  <!-- Bing Webmaster Tools 등록 후 받은 코드 -->
+  <meta name="msvalidate.01" content="REPLACE_WITH_BING_CODE" />
+
+  <!-- ─── Geo Targeting (한국) ──────────────────────────────────── -->
+  <meta name="geo.region" content="KR" />
+  <meta name="geo.country" content="South Korea" />
+  <meta name="geo.placename" content="Seoul, South Korea" />
+  <meta name="ICBM" content="37.5665, 126.9780" />
+  <meta http-equiv="content-language" content="ko-KR" />
+
+  <!-- ─── Locale Alternates ─────────────────────────────────────── -->
+  <link rel="alternate" hreflang="ko" href="https://cruiselog-landing.vercel.app/" />
+  <link rel="alternate" hreflang="ko-KR" href="https://cruiselog-landing.vercel.app/" />
+  <link rel="alternate" hreflang="x-default" href="https://cruiselog-landing.vercel.app/" />
+
+  <!-- ─── Article-specific OG ───────────────────────────────────── -->
+  <meta property="article:author" content="오용택 (Austin Oh)" />
+  <meta property="article:publisher" content="Wishmaker Group" />
+  <meta property="article:section" content="Travel" />
+  <meta property="article:tag" content="크루즈, 크루즈여행, 크루즈로그, CruiseLog, 위시메이커, Wishmaker" />
+
   <!-- ─── Open Graph / Facebook ─────────────────────────────────── -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://cruiselog-landing.vercel.app/" />
@@ -43,6 +80,15 @@
 
   <!-- ─── Sitemap / Robots ─────────────────────────────────────── -->
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+  <!-- ─── PWA Manifest ─────────────────────────────────────────── -->
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- ─── DNS Prefetch (성능 + SEO Core Web Vitals) ────────────── -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="dns-prefetch" href="https://images.pexels.com" />
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
 
   <!-- ─── Canonical ─────────────────────────────────────────────── -->
   <link rel="canonical" href="https://cruiselog-landing.vercel.app/" />
@@ -134,6 +180,146 @@
         "@id": "https://cruiselog-landing.vercel.app/#wishmaker-group"
       },
       "inLanguage": "ko-KR"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://cruiselog-landing.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "서비스 소개",
+          "item": "https://cruiselog-landing.vercel.app/#about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "차별점",
+          "item": "https://cruiselog-landing.vercel.app/#why"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "채널",
+          "item": "https://cruiselog-landing.vercel.app/#channels"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "크루즈 여행 정보 가이드",
+      "provider": {
+        "@id": "https://cruiselog-landing.vercel.app/#cruiselog"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "South Korea"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "크루즈 여행 입문자, 크루즈 마니아"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "크루즈로그 콘텐츠",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "크루즈 비용 공개"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "크루즈 예약 가이드"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "선사 비교 (MSC, 로얄캐리비안, 코스타, 프린세스)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "기항지 가이드 + 크루즈 꿀팁"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "크루즈 여행 비용은 얼마나 드나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "선사·노선·시즌에 따라 다르지만 2인 7박 기준 약 150~300만원 선이 일반적이에요. 크루즈로그에서는 실제 영수증을 공개하며 직접 예약하면 패키지 대비 30%까지 저렴할 수 있다고 안내합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "크루즈 가격에는 무엇이 포함되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "기본료에는 숙박, 식사(뷔페·메인다이닝), 항만 간 이동, 기본 엔터테인먼트가 포함돼요. 별도 비용은 주류, 스파, 기항지 투어, 특별 레스토랑, Wi-Fi, 팁(Service Charge)입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "크루즈 처음인데 멀미가 걱정돼요.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "현대 크루즈선은 안정화 장치(Stabilizer)가 잘 갖춰져 있어요. 중앙 층 객실이 흔들림이 가장 적고, 멀미약을 미리 챙겨두면 대부분 큰 문제 없이 즐길 수 있어요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "한국에서 출발하는 크루즈가 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, 부산(감천국제크루즈터미널 / 국제여객터미널)과 인천(인천크루즈터미널)에서 출발하는 한국 모항 크루즈가 운항 중이에요. 일본·중국·동남아 노선이 많습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "크루즈로그는 누가 운영하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "크루즈로그(CruiseLog)는 위시메이커 그룹(Wishmaker Group)에서 운영하는 크루즈 여행 정보 채널입니다. 창립자는 오용택(Yongtaek Oh / Austin Oh / yongtaekoh / austinoh)이며, 7개 채널(YouTube, Instagram, 네이버 블로그/카페, Threads, 티스토리)에 매일 새 콘텐츠를 발행합니다."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "크루즈로그 7개 채널",
+      "description": "크루즈로그가 운영하는 모든 소셜 채널",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "YouTube", "url": "https://youtube.com/@cruiselog_kr" },
+        { "@type": "ListItem", "position": 2, "name": "Instagram", "url": "https://instagram.com/cruiselog_kr" },
+        { "@type": "ListItem", "position": 3, "name": "네이버 블로그", "url": "https://blog.naver.com/cruiselog" },
+        { "@type": "ListItem", "position": 4, "name": "네이버 카페", "url": "https://cafe.naver.com/cruiselog" },
+        { "@type": "ListItem", "position": 5, "name": "Threads", "url": "https://www.threads.net/@cruiselog_kr" },
+        { "@type": "ListItem", "position": 6, "name": "Tistory", "url": "https://cruiselog.tistory.com" }
+      ]
     }
   ]
   </script>

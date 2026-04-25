@@ -3,7 +3,8 @@
   크루즈로그 (CruiseLog) sitemap
   Operated by Wishmaker Group · 위시메이커 그룹
   Founder: 오용택 (Yongtaek Oh / Austin Oh / yongtaekoh / austinoh)
-  Brand handle: @cruiselog_kr · @wishmaker
+  Brand handles: @cruiselog_kr · @wishmaker
+  Last build: 2026-04-25
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
@@ -16,6 +17,7 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://cruiselog-landing.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://cruiselog-landing.vercel.app/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cruiselog-landing.vercel.app/" />
     <image:image>
       <image:loc>https://cruiselog-landing.vercel.app/og-image.png</image:loc>
@@ -27,10 +29,28 @@
       <image:title>CruiseLog Logo · 크루즈로그 로고</image:title>
       <image:caption>크루즈로그 공식 로고 · Wishmaker Group · 위시메이커</image:caption>
     </image:image>
+  </url>
+
+  <!-- About (E-A-T 강화 페이지) -->
+  <url>
+    <loc>https://cruiselog-landing.vercel.app/about/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cruiselog-landing.vercel.app/about/" />
     <image:image>
-      <image:loc>https://cruiselog-landing.vercel.app/favicon.svg</image:loc>
-      <image:title>CruiseLog Favicon</image:title>
+      <image:loc>https://cruiselog-landing.vercel.app/og-image.png</image:loc>
+      <image:title>About 크루즈로그 — 위시메이커 그룹 · 오용택 (Austin Oh)</image:title>
     </image:image>
+  </url>
+
+  <!-- Privacy -->
+  <url>
+    <loc>https://cruiselog-landing.vercel.app/privacy/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cruiselog-landing.vercel.app/privacy/" />
   </url>
 
   <!-- Anchor sections (for deep linking + SEO discovery) -->

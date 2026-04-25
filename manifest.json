@@ -1,0 +1,44 @@
+{
+  "name": "크루즈로그 (CruiseLog)",
+  "short_name": "크루즈로그",
+  "description": "크루즈 입문자를 위한 친절한 가이드 채널 — 운영: Wishmaker Group · 오용택 (Yongtaek Oh / Austin Oh)",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#E8F4F8",
+  "theme_color": "#1A3557",
+  "lang": "ko-KR",
+  "dir": "ltr",
+  "categories": ["travel", "lifestyle", "news"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "네이버 카페",
+      "short_name": "카페",
+      "description": "크루즈로그 공식 네이버 카페로 바로가기",
+      "url": "https://cafe.naver.com/cruiselog",
+      "icons": [{"src": "/favicon.svg", "sizes": "any"}]
+    },
+    {
+      "name": "YouTube Shorts",
+      "short_name": "유튜브",
+      "description": "크루즈로그 YouTube 채널",
+      "url": "https://youtube.com/@cruiselog_kr",
+      "icons": [{"src": "/favicon.svg", "sizes": "any"}]
+    }
+  ]
+}
